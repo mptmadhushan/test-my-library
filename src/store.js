@@ -1,13 +1,13 @@
-// store.js
+// src/store/store.js
 import { configureStore } from '@reduxjs/toolkit';
-import { myApi } from 'gc-test-npm'; // Import your API slice
+import { myApi } from 'gc-test-npm';
 
 const store = configureStore({
   reducer: {
-    [myApi.reducerPath]: myApi.reducer, // Add the API slice reducer
+    [myApi.reducerPath]: myApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(myApi.middleware), // Add the API middleware
+    getDefaultMiddleware().concat(myApi.middleware),
 });
 
 export default store;

@@ -7,6 +7,6 @@ import './index.css'; // Import your CSS file if you have one
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App /> {/* Render your App component */}
+    <App /> 
   </React.StrictMode>
 );
