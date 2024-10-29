@@ -12,7 +12,7 @@ const App = () => (
       }}
     >
       <DocumentEditorComponent
-        docUrl="https://doc-viewer-app.vercel.app/TESTDocument.docx"
+        devUrl="https://0392-2402-4000-b190-4aac-ccf3-1888-4d96-28ba.ngrok-free.app"
         onLoadComponentError={(errorCode, errorDescription) => {
           console.error("Error:", errorCode, errorDescription);
         }}
